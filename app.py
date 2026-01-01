@@ -51,9 +51,7 @@ def launch_bot():
 
     payload = {
         "meeting_url": meeting_url,
-        "bot_name":   "Transcription‑Demo",
-        # Ask Attendee to start real‑time transcription webhooks
-        "subscribe_to_triggers": ["transcript.update"]
+        "bot_name":   "Transcription‑Demo"
     }
     resp = requests.post(
         f"{ATTENDEE_API_BASE}/api/v1/bots",
